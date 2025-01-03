@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.8 on win32)" generated="2025-01-02T21:01:24.683311" rpa="false" schemaversion="5">
+<suite id="s1" name="WellabeInterface" source="C:\Users\SING31\Music\WellabeInterface">
+<suite id="s1-s1" name="FeatureFile" source="C:\Users\SING31\Music\WellabeInterface\FeatureFile">
+<suite id="s1-s1-s1" name="FeatureFile" source="C:\Users\SING31\Music\WellabeInterface\FeatureFile\FeatureFile.robot">
+<test id="s1-s1-s1-t1" name="Feature File Row validation:" line="13">
+<kw name="Validate Data" owner="FeatureFile">
+<msg time="2025-01-02T21:01:27.553783" level="INFO">All data matched:  Test passed</msg>
+<arg>${path}</arg>
+<arg>${sheetName}</arg>
+<arg>${contract}</arg>
+<arg>${feat_type}</arg>
+<arg>${planCode}</arg>
+<status status="PASS" start="2025-01-02T21:01:26.566220" elapsed="0.987563"/>
+</kw>
+<status status="PASS" start="2025-01-02T21:01:26.565211" elapsed="0.989587"/>
+</test>
+<status status="PASS" start="2025-01-02T21:01:24.710203" elapsed="2.846594"/>
+</suite>
+<status status="PASS" start="2025-01-02T21:01:24.709204" elapsed="2.849591"/>
+</suite>
+<status status="PASS" start="2025-01-02T21:01:24.685203" elapsed="2.874595"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="WellabeInterface">WellabeInterface</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="FeatureFile">WellabeInterface.FeatureFile</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="FeatureFile">WellabeInterface.FeatureFile.FeatureFile</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
