@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.12.8 on win32)" generated="2025-01-02T21:01:24.683311" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.12.8 on win32)" generated="2025-01-03T10:48:32.266088" rpa="false" schemaversion="5">
 <suite id="s1" name="WellabeInterface" source="C:\Users\SING31\Music\WellabeInterface">
-<suite id="s1-s1" name="FeatureFile" source="C:\Users\SING31\Music\WellabeInterface\FeatureFile">
-<suite id="s1-s1-s1" name="FeatureFile" source="C:\Users\SING31\Music\WellabeInterface\FeatureFile\FeatureFile.robot">
-<test id="s1-s1-s1-t1" name="Feature File Row validation:" line="13">
-<kw name="Validate Data" owner="FeatureFile">
-<msg time="2025-01-02T21:01:27.553783" level="INFO">All data matched:  Test passed</msg>
+<suite id="s1-s1" name="FeeFile" source="C:\Users\SING31\Music\WellabeInterface\FeeFile">
+<suite id="s1-s1-s1" name="FeeFileTesting" source="C:\Users\SING31\Music\WellabeInterface\FeeFile\FeeFileTesting.robot">
+<test id="s1-s1-s1-t1" name="Fee File Row validation:" line="14">
+<kw name="Validate Data" owner="FeeApi">
+<msg time="2025-01-03T10:48:35.534735" level="INFO">All data matched:  Test passed</msg>
 <arg>${path}</arg>
 <arg>${sheetName}</arg>
 <arg>${contract}</arg>
-<arg>${feat_type}</arg>
+<arg>${txnNumber}</arg>
 <arg>${planCode}</arg>
-<status status="PASS" start="2025-01-02T21:01:26.566220" elapsed="0.987563"/>
+<status status="PASS" start="2025-01-03T10:48:33.654562" elapsed="1.880173"/>
 </kw>
-<status status="PASS" start="2025-01-02T21:01:26.565211" elapsed="0.989587"/>
+<status status="PASS" start="2025-01-03T10:48:33.653440" elapsed="1.881295"/>
 </test>
-<status status="PASS" start="2025-01-02T21:01:24.710203" elapsed="2.846594"/>
+<status status="PASS" start="2025-01-03T10:48:32.314838" elapsed="3.220902"/>
 </suite>
-<status status="PASS" start="2025-01-02T21:01:24.709204" elapsed="2.849591"/>
+<status status="PASS" start="2025-01-03T10:48:32.312333" elapsed="3.224568"/>
 </suite>
-<status status="PASS" start="2025-01-02T21:01:24.685203" elapsed="2.874595"/>
+<status status="PASS" start="2025-01-03T10:48:32.268496" elapsed="3.269413"/>
 </suite>
 <statistics>
 <total>
@@ -29,8 +29,8 @@
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="WellabeInterface">WellabeInterface</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="FeatureFile">WellabeInterface.FeatureFile</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="FeatureFile">WellabeInterface.FeatureFile.FeatureFile</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="FeeFile">WellabeInterface.FeeFile</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="FeeFileTesting">WellabeInterface.FeeFile.FeeFileTesting</stat>
 </suite>
 </statistics>
 <errors>
