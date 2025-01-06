@@ -3,6 +3,7 @@ import requests as rq
 import numpy as np
 
 
+
 class FeeApi:
     BASE_URL = "https://qa-zahara-api.zinnia.io/v1/policies"
 
@@ -14,15 +15,16 @@ class FeeApi:
         return excel_list
 
     def validate_data(self, path, sheet_name, contract, txn_number, plan_code):
+
         excel_row = self.get_excel_data(path, sheet_name, contract, txn_number)
         api_data = self.get_api(contract , plan_code , txn_number)
 
-        assert excel_row[0] == api_data[0], "Contract missmatch"
-        assert excel_row[1] == api_data[1], "TXN_Number missmatch"
-        assert excel_row[2] == api_data[2] , "Source missmatch"
-        assert excel_row[3] == api_data[3], "Desc missmatch"
-        assert excel_row[4] == api_data[4], "Amount missmatch"
-        assert excel_row[5] == api_data[5], "Status missmatch"
+        assert excel_row[0] == api_data[0],  f"Contract missmatch. Api Value: {api_data[0]},  Excel value: {excel_row[0]}"
+        assert excel_row[1] == api_data[1],  f"TXN_Number missmatch. Api Value: {api_data[1]},  Excel value: {excel_row[1]}"
+        assert excel_row[2] == api_data[2],  f"Source missmatch. Api Value: {api_data[2]},  Excel value: {excel_row[2]}"
+        assert excel_row[3] == api_data[3],  f"Desc missmatch. Api Value: {api_data[3]},  Excel value: {excel_row[3]}"
+        assert excel_row[4] == api_data[4],  f"Amount missmatch. Api Value: {api_data[4]},  Excel value: {excel_row[4]}"
+        assert excel_row[5] == api_data[5],  f"Status missmatch. Api Value: {api_data[5]},  Excel value: {excel_row[5]}"
 
         print("All data matched:  Test passed")
 

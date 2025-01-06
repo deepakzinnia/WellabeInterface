@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.12.8 on win32)" generated="2025-01-03T10:48:32.266088" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.12.8 on win32)" generated="2025-01-05T13:41:21.649132" rpa="false" schemaversion="5">
 <suite id="s1" name="WellabeInterface" source="C:\Users\SING31\Music\WellabeInterface">
 <suite id="s1-s1" name="FeeFile" source="C:\Users\SING31\Music\WellabeInterface\FeeFile">
 <suite id="s1-s1-s1" name="FeeFileTesting" source="C:\Users\SING31\Music\WellabeInterface\FeeFile\FeeFileTesting.robot">
-<test id="s1-s1-s1-t1" name="Fee File Row validation:" line="14">
+<test id="s1-s1-s1-t1" name="Fee File Row validation:" line="16">
 <kw name="Validate Data" owner="FeeApi">
-<msg time="2025-01-03T10:48:35.534735" level="INFO">All data matched:  Test passed</msg>
+<msg time="2025-01-05T13:41:25.032185" level="FAIL">Source missmatch. Api Value: ZINNIA1,  Excel value: ZINNIA</msg>
 <arg>${path}</arg>
 <arg>${sheetName}</arg>
 <arg>${contract}</arg>
 <arg>${txnNumber}</arg>
 <arg>${planCode}</arg>
-<status status="PASS" start="2025-01-03T10:48:33.654562" elapsed="1.880173"/>
+<status status="FAIL" start="2025-01-05T13:41:22.625218" elapsed="2.408217">Source missmatch. Api Value: ZINNIA1,  Excel value: ZINNIA</status>
 </kw>
-<status status="PASS" start="2025-01-03T10:48:33.653440" elapsed="1.881295"/>
+<status status="FAIL" start="2025-01-05T13:41:22.623957" elapsed="2.410574">Source missmatch. Api Value: ZINNIA1,  Excel value: ZINNIA</status>
 </test>
-<status status="PASS" start="2025-01-03T10:48:32.314838" elapsed="3.220902"/>
+<status status="FAIL" start="2025-01-05T13:41:21.687029" elapsed="3.348568"/>
 </suite>
-<status status="PASS" start="2025-01-03T10:48:32.312333" elapsed="3.224568"/>
+<status status="FAIL" start="2025-01-05T13:41:21.685876" elapsed="3.353392"/>
 </suite>
-<status status="PASS" start="2025-01-03T10:48:32.268496" elapsed="3.269413"/>
+<status status="FAIL" start="2025-01-05T13:41:21.651328" elapsed="3.391271"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="WellabeInterface">WellabeInterface</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="FeeFile">WellabeInterface.FeeFile</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="FeeFileTesting">WellabeInterface.FeeFile.FeeFileTesting</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="WellabeInterface">WellabeInterface</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="FeeFile">WellabeInterface.FeeFile</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="FeeFileTesting">WellabeInterface.FeeFile.FeeFileTesting</stat>
 </suite>
 </statistics>
 <errors>
